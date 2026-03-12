@@ -1,3 +1,6 @@
+from django.contrib import admin
+from django.urls import path
+from main import views
 """
 DjangoTest2 URL Configuration
 
@@ -22,5 +25,6 @@ Including another URLconf
 
 urlpatterns = [
     # Uncomment the next line to enable the admin:
-    #path('admin/', admin.site.urls)
+    path('admin/', admin.site.urls),
+    path('', views.home)
 ]

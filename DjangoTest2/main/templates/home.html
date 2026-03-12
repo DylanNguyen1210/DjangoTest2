@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    {% load static %}
+    <link rel="stylesheet" typr="text/css" href=" {% static 'site.css' %}" />
+</head>
+<body>
+    <div><a href="home">Home</a></div>
+    {{ content }}
+</body>
+</html>
